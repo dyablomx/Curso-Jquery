@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("title").append("DocQuery");
+            //all h1
+            $("h1").css("border","3px dotted green");
+            //firts h1
+            $("h1:first").css("border","3px dotted blue");
+            //last h1
+            $("h1:last").css("border","3px dotted red");
+        });
+    </script>
+</head>
+<body>
+    <h1> JQuery 1</h1>
+    <h1> JQuery 2</h1>
+    <h1> JQuery 3</h1>
+
+    <a href="index.html">Regresar >></a>
+</body>
+</html>

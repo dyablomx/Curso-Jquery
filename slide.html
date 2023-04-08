@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script>
+        $("document").ready(function(){
+            
+            $("#slide-up").click(function(){
+                $("#textbox").slideUp("2000", "linear");
+            });
+
+            $("#slide-down").click(function(){
+                $("#textbox").slideDown("2000", "linear");
+            });
+
+            $("#toogleSlide").click(function(){
+                $("#textbox").slideToggle("2000", function(){
+                    alert("Done");
+                });
+            });
+
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <a href="#" id="slide-up">Slade Up</a> | <a href="#" id="slide-down">Slade Down</a> | <a href="#" id="toogleSlide">Toogle</a>
+
+    <div id="textbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium consequuntur! Necessitatibus tempora animi ratione. Voluptatem, autem fugiat. Temporibus ipsum quaerat laboriosam placeat error odit aut sit officiis quos a?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium consequuntur! Necessitatibus tempora animi ratione. Voluptatem, autem fugiat. Temporibus ipsum quaerat laboriosam placeat error odit aut sit officiis quos a?</p>
+    </div>
+
+    <a href="index.html">Regresar >></a>
+</body>
+</html>

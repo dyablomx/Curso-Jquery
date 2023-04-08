@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script>
+        $("document").ready(function(){
+        
+        $("#textbox").on("click", whenMouseIsClicked);
+
+        $("#textbox").on("mouseleave", whenMouseLeaves);
+        
+        function whenMouseIsClicked(){
+            $("#textbox").html("<h1>You clicked me</h1>");
+        }
+        
+        function whenMouseLeaves(){
+            $("#textbox").html("<h1>Where ya goin?</h1>");
+        }
+        });
+    </script>
+    <style>
+        #textbox{
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(255,0,0,0.6) 100%);
+        }
+        /*https://cssgradient.io*/
+        #textbox h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="textbox">
+        
+    </div>
+
+    <a href="index.html">Regresar >></a>
+</body>
+</html>

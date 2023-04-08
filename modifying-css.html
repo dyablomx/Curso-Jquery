@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script>
+        $("document").ready(function(){
+            
+            $("#add-class").click(function(){
+                $("p:first").addClass("color");
+            });
+
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            });
+
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('color');
+            });
+
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size", "+=2px");
+            });
+
+        });
+    </script>
+    <style>
+        .color{
+            color: #00d8ff;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="add-class">Add Class</a>
+
+    <a href="#" id="remove-class">Remove Class</a>
+
+    <a href="#" id="toggle-class">Toggle Class</a>
+
+    <a href="#" id="increase-class">Increase Class</a>
+
+    <div id="container">
+        <p>
+            1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium consequuntur! Necessitatibus tempora animi ratione. Voluptatem, autem fugiat. Temporibus ipsum quaerat laboriosam placeat error odit aut sit officiis quos a?
+        </p>
+        <p>
+            2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium consequuntur! Necessitatibus tempora animi ratione. Voluptatem, autem fugiat. Temporibus ipsum quaerat laboriosam placeat error odit aut sit officiis quos a?
+        </p>
+        <p>
+            3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium consequuntur! Necessitatibus tempora animi ratione. Voluptatem, autem fugiat. Temporibus ipsum quaerat laboriosam placeat error odit aut sit officiis quos a?
+        </p>
+    </div>
+
+    <a href="index.html">Regresar >></a>
+</body>
+</html>
